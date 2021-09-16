@@ -1,0 +1,90 @@
+
+@import "common";
+@import "blocks/vars";
+
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/blog";
+@import "blocks/footer";
+
+
+
+@media (min-width: 768px) {
+  .menu-toggler {
+    display: none;
+  }
+
+  .header__nav {
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+
+    &__item + &__item {
+      margin-left: 0.5em;
+      
+    }
+
+    &__link {
+      border: none;
+      padding-left: 1em;
+      padding-right: 1em;
+      color: #333;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+
+  .logo {
+    max-width: 30%;
+  }
+
+  .about {
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+      align-items: center;
+    }
+  }
+
+  .services {
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+
+  .blog {
+    &__posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1em;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .services {
+    &__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .blog {
+    &__posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

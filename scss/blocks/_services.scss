@@ -1,0 +1,23 @@
+.services {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #7C56BE;
+    padding: 10px;
+    color: #fff;
+
+    &__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+  
+    &__item {
+      margin-bottom: 1em;
+      padding: 0.7em;
+      text-align: left;
+    }
+    
+    p {
+        line-height: 20px;
+    }
+  }
